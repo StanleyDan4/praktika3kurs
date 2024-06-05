@@ -1,0 +1,25 @@
+﻿<Window x:Class="praktika3kurs.ApartmentsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:praktika3kurs"
+        mc:Ignorable="d"
+        Title="ApartmentsWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="ApartmentsDataGrid" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="City" Binding="{Binding AddressCity}" Width="*"/>
+                <DataGridTextColumn Header="Street" Binding="{Binding AddressStreet}" Width="*"/>
+                <DataGridTextColumn Header="House" Binding="{Binding AddressHouse}" Width="*"/>
+                <DataGridTextColumn Header="Number" Binding="{Binding AddressNumber}" Width="*"/>
+                <DataGridTextColumn Header="Total Area" Binding="{Binding TotalArea}" Width="*"/>
+                <DataGridTextColumn Header="Rooms" Binding="{Binding Rooms}" Width="*"/>
+                <DataGridTextColumn Header="Floor" Binding="{Binding Floor}" Width="*"/>
+                <DataGridTextColumn Header="District ID" Binding="{Binding IdDistricts}" Width="*"/>
+                <DataGridTextColumn Header="Type ID" Binding="{Binding TypeObjectId}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
